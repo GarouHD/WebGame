@@ -145,7 +145,7 @@ function create() {
     this.cameras.main.startFollow(player);
 
     // Set the camera bounds to the size of the world (floor)
-    //this.cameras.main.setBounds(0, 0,  mapWidth, mapHeight);
+    this.cameras.main.setBounds(0, 0,  mapWidth, mapHeight);
 
 
 
