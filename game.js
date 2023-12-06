@@ -233,6 +233,13 @@ function create() {
         playerTakeDamage(scene, 70);
     });
 
+    mobs = [slimes, demons, zombies, docs]
+    for (let mob1 of mobs) {
+        for (let mob2 of mobs) {
+            this.physics.add.collider(mob1, mob2);
+        }
+    }
+
 }
 
 function update() {
@@ -513,7 +520,7 @@ function killSlime(scene, slime) {
             break;
         case 'zombie':
             healPlayer(50)
-            score += 15
+            score += 50
             break;
     }
 
